@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>
+GYM'S WEBSITE
+        </title>
+    </head>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-image: url(man.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 1000px;
+        }
+        .right{
+/* border:2px solid blue; */
+display: inline-block;
+position: absolute;
+right: 44px;
+top: 20px;
+        }
+        .mid{
+            /* border:2px solid blueviolet; */
+            display: block;
+            width: 39%;
+            margin: 45px auto;
+        }
+        .left{
+            /* border:2px solid rgb(255, 0, 128); */
+            display: inline-block;
+            position: absolute;
+            left:60px;
+            top: 20px;
+            /* width: 15%; */
+        }
+        .left img{
+            width: 60px;
+            border-radius: 40px;
+            /* filter: invert(100%); */
+        }
+        .left div{
+            color: wheat;
+            text-align: center;
+            line-height: 20px;
+            font-size: 15px; 
+            /*  font-weight: bolder; */
+        }
+        .navbar li{
+            display: inline-block;
+        padding: 9px;
+        font-size: 19px;
+        font-weight: bold;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover,.navbar li :active {
+text-decoration: underline;
+color: rgb(94, 175, 212);
+        }
+        .btn{
+            margin: 14px auto;
+            background-color: black;
+            color: aliceblue;
+            padding: 7px 12px;
+border: 3px solid rgb(172, 88, 130);
+border-radius: 10px;
+cursor: pointer;
+        }
+        .btn :hover{
+            color: beige;
+            background-color: blue;
+        }
+        .container{
+            border: 2px solid palevioletred ;
+            color: black;
+            margin: 70px 50px; 
+            padding: 70px;
+            /* margin: 100px 55%;
+            padding: 10px; */
+            width: 60%;
+            border-radius: 10px;
+        }
+        .container h1{
+            font-family: cursive;
+            font-size: 27px;
+            color: black;
+            background-color: aliceblue;
+            border: 2px solid black ;
+        }
+        .form_group button{
+            display: block;
+            width: 30%;
+            margin: auto;
+        }
+        .form_group input{
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 5px;
+            margin: 6px auto;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight:bolder ;
+        }
+    </style>
+    <body>
+<header class="header">
+    <div class="right">
+<!-- for any search bar --> 
+<button class="btn"> CALL US  </button>
+<button class="btn"> REGISTER NOW </button>
+    </div>
+    <div class="mid">
+<!-- for may be navbar  -->
+<ul class="navbar">
+    <li> <a href="#" class="active"> HOME </a></li>
+    <li> <a href="#" class="active"> ABOUT US </a></li>
+    <li> <a href="#" class="active"> OUR MISSION </a></li>
+    <li> <a href="#" class="active">  SERVICES </a></li>
+</ul>
+    </div>
+    <div class="left">
+<!-- for logo -->
+    <img src="logo.jpg" alt="logo">
+    <div> BE STRONG BE MOTIVATED  </div>
+    </div>
+</header>
+<div class="container">
+<h1>
+JOIN THE BEST GYM OF YOUR CITY 
+</h1>
+<form action="nonaction.php">
+    <div class="form_group">
+<input type="text" name="name" placeholder="ENTER YOUR FULL NAME"><br>
+<input type="text" name="email" placeholder="ENTER YOUR EMAIL "><br>
+<input type="text" name="age" placeholder="ENTER YOUR AGE "><br>
+<input type="text" name="gender" placeholder="ENTER YOUR GENDER "><br>
+<input type="text" name="phone" placeholder="ENTER YOUR PHONE NUMBER "><br>
+<button class="btn"> SUBMIT </button>
+    </div>
+    </div>
+</form>
+    </body>
+</html>
